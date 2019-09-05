@@ -36,7 +36,7 @@ class Home extends React.Component {
               </p>
 
               <div className='row'>
-                <Link href='#'>
+                <Link href="mailto:hello@faithdeck.com?subject=Let's work together">
                   <a className='card'>Contact Us</a>
                 </Link>
               </div>
