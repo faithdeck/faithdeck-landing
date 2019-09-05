@@ -1,0 +1,3 @@
+# Faithdeck Landing Page
+
+Just a quick Next.js landing page. More to come...
