@@ -1,13 +1,20 @@
 import React from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
 import AOS from 'aos';
 import Nav from '../components/nav';
 import '../node_modules/aos/dist/aos.css';
+import { initGA, logPageView } from '../utils/analytics';
 
 class Home extends React.Component {
   
   componentDidMount() {
+    // Setup Analytics
+    if ( !window.GA_INITIALIZED ) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+    // Run element animations
     this.runAOS();
   }
 
