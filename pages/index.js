@@ -43,9 +43,7 @@ class Home extends React.Component {
               </p>
 
               <div className='row'>
-                <Link href="mailto:hello@faithdeck.com?subject=Let's work together">
-                  <a className='card'>Contact Us</a>
-                </Link>
+                <a className='card' href="mailto:hello@faithdeck.com?subject=Let's work together">Contact Us</a>
               </div>
             </div>
           </div>
