@@ -1,11 +1,11 @@
 import React from 'react';
 
 const links = [
-  { href: 'https://facebook.com/faithdeck', label: 'Facebook' },
-  { href: 'https://instagram.com', label: 'Instagram' },
-  { href: 'https://twitter.com', label: 'Twitter' },
-  { href: 'https://linkedin.com', label: 'LinkedIn' },
-  { href: 'https://github.com', label: 'GitHub' }
+  { href: 'https://www.facebook.com/faithdeckmedia/', label: 'Facebook', target: '_blank' },
+  { href: 'https://www.instagram.com/faithdeckmedia/', label: 'Instagram', target: '_blank' },
+  { href: 'https://twitter.com/faithdeckmedia/', label: 'Twitter', target: '_blank' },
+  { href: 'https://www.linkedin.com/company/faithdeckmedia/', label: 'LinkedIn', target: '_blank' },
+  { href: 'https://github.com/faithdeck/', label: 'GitHub', target: '_blank' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
@@ -14,9 +14,9 @@ const links = [
 const Nav = () => (
   <nav>
     <ul>
-      {links.map(({ key, href, label }) => (
+      {links.map(({ key, href, target, label }) => (
         <li key={key}>
-          <a href={href}>{label}</a>
+          <a href={href} target={target}>{label}</a>
         </li>
       ))}
     </ul>
