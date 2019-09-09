@@ -52,6 +52,54 @@ class Home extends React.Component {
         </div>
 
         <style jsx>{`
+          :global(html) {
+            font-size: 62.5%; /* 1rem = 10px */
+          }
+          :global(body) {
+            background-color: #664FEF;
+            background: linear-gradient(160deg, #664FEF 0%, #F2994A 100%);
+            margin: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: -0.015em;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            color: white;
+	          box-sizing: border-box;
+          }
+          *,
+          *:before,
+          *:after {
+              -webkit-box-sizing: inherit;
+              -moz-box-sizing: inherit;
+              box-sizing: inherit;
+              -webkit-font-smoothing: antialiased;
+              word-break: break-word;
+              word-wrap: break-word;
+          }
+          @font-face {
+            font-family: 'Inter';
+            font-style:  normal;
+            font-weight: 400;
+            font-display: auto;
+            src: url('/static/fonts/inter/Inter-Regular.woff2') format('woff2'),
+              url('/static/fonts/inter/Inter-Regular.woff') format('woff');
+          }
+          @font-face {
+            font-family: 'Inter';
+            font-style:  normal;
+            font-weight: 700;
+            font-display: auto;
+            src: url('/static/fonts/inter/Inter-Bold.woff2') format('woff2'),
+              url('/static/fonts/inter/Inter-Bold.woff') format('woff');
+          }
+          @media ( prefers-reduced-motion: reduce ) {
+            * {
+              animation-duration: 0s !important;
+              transition-duration: 0s !important;
+            }
+          }
           .wrapper {
             width: 100vw;
             height: 100vh;
