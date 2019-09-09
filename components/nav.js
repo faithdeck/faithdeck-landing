@@ -22,17 +22,6 @@ const Nav = () => (
     </ul>
 
     <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-        background-color: #664FEF;
-        background: linear-gradient(160deg, #664FEF 0%, #F2994A 100%);
-        color: white;
-      }
       nav {
         text-align: center;
         align-self: flex-end;
@@ -55,10 +44,10 @@ const Nav = () => (
         color: white;
         text-decoration: none;
         font-size: 13px;
-        transition: all 135ms cubic-bezier(.4,0,.2,1);
+        transition: all .15s linear;
       }
       a:hover {
-        opacity: 0.9;
+        opacity: 0.8;
       }
     `}</style>
   </nav>
